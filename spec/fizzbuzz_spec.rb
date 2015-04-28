@@ -25,4 +25,28 @@ describe 'fizzbuzz' do
     expect(divide_by_15?(16)).to be_falsey
   end
 
+  it 'a value is divisible by a given number' do
+    expect(divisible?(25,5)).to be_truthy
+  end
+
+  it 'a value is not divisible by a given number' do
+    expect(divisible?(26,5)).to be_falsey
+  end
+
+  it 'will return FIZZBUZZ' do
+    expect(fizzbuzz(15)).to eql "FizzBuzz"
+  end
+
+  it 'will return BUZZ' do
+    expect(fizzbuzz(5)).to eql "Buzz"
+  end
+
+  it 'will return FIZZBUZZ' do
+    expect(fizzbuzz(3)).to eql "Fizz"
+  end
+
+  it 'will return the number' do
+    expect(fizzbuzz(4)).to eql 4
+  end
+
 end
